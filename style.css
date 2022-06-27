@@ -7,3 +7,164 @@
     padding: 0;
     box-sizing: content-box;
 }
+
+
+/*==================== REM ET VARIABLES ====================*/
+
+html {
+    font-size: 16px;
+    max-width: 375px;
+    margin: auto;
+}
+
+body{
+    margin-bottom: 75px;
+}
+
+
+/*==================== TYPE DE POLICE ====================*/
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+/*==================== HEADER ====================*/
+header {
+    background-color: #f5a017;
+    padding: 25px 35px 38px 35px;
+    border-bottom-left-radius: 20% 40%;
+}
+
+.header_title {
+    color: rgba(17, 17, 37, 1);
+    margin: 0px 0px 19px 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header_content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 700;
+}
+
+.header_content_name {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.header_content_name strong {
+    font-size: 19px;
+}
+
+.header_content_value {
+    font-size: 23px;
+}
+
+/*==================== MAIN ====================*/
+
+.progress {
+    background-color: rgba(17, 17, 37, 1);
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.progress strong{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.progress_date,
+.progress_origin{
+    width: 50%;
+    padding: 23px 0px 28px 0px;
+}
+.progress_date{
+    background-color: white;
+    border-bottom-left-radius: 20% 40%;
+}
+.progress_origin{
+    background-color: rgb(233, 235, 242);
+}
+
+.progress_date_number,
+.progress_origin_number{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-top:4px;
+}
+
+.progress_date_number div,
+.progress_origin_number div{
+    font-weight: 500;
+    font-size: 20px;
+    color:white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress_date_number div{
+    background-color: #D85B52;
+}
+.progress_origin_number div{
+    background-color: #27B17C;
+}
+
+
+.market {
+    background-color: rgba(17, 17, 37, 1);
+    color:white;
+}
+.market_title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding:30px 14px 16px 36px;
+}
+.market_title h2{
+    font-size:16px;
+    opacity: 70%;
+    font-weight: 400;
+}
+.market_title div{
+    font-weight: 700;
+}
+.market_title span{
+    font-weight: 500;
+}
+
+.market_graph{
+    height: 150px;
+}
+
+
+/*==================== FOOTER ====================*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    z-index:99;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+}
