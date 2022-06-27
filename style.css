@@ -154,6 +154,69 @@ header h1 {
 }
 
 
+.article{
+    background-color: rgba(17, 17, 37, 1);
+    color:white;
+    padding: 37px 0px;
+}
+
+.article_link{
+    margin: 0px 39px 0px 32px;
+    display: flex;
+    gap:10px;
+    font-size: 16px;
+}
+
+.article_link h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.article_link button{
+    font-weight: 500;
+    font-size: 20px;
+    color:white;
+    background-color: rgba(17, 17, 37, 1);
+    border: solid #E4E4E4 1px;
+    border-radius: 100%;
+    flex: none;
+    width: 39px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article_photo{
+    margin: 20.5px 24px 17.5px 24px;
+    height: 104px;
+    background-color: white;
+    border-radius: 10px 40px 10px 40px;
+}
+
+.article_title{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin: 0px 58px 0px 34px;
+}
+
+.article_title strong{
+    font-weight: 600;
+    color : white;
+}
+
+.article_title p{
+    font-weight: 400;
+    color: #F3F4F5;
+}
+
+.article_text{
+    margin: 10.5px 49px 0px 34px;
+}
+
+
 /*==================== FOOTER ====================*/
 footer{
     position: fixed;
