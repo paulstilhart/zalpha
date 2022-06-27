@@ -151,13 +151,43 @@ header h1 {
 
 .market_graph{
     height: 150px;
+    background-color: white;
+}
+
+.profil{
+    background-color: rgba(17, 17, 37, 1);
+    padding: 50px 24px 37px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    height: 139px;
+}
+
+.profil_card,
+.profil_footprint{
+    width: 50%;
+    height: 109px;
+    background-color: #EFEFEF;
+    border-radius: 30px;
+    padding:15px;
+    display: flex;
+    font-size:12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.profil strong{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.profil_card{
+    align-items: flex-end;
 }
 
 
 .article{
     background-color: rgba(17, 17, 37, 1);
     color:white;
-    padding: 37px 0px;
 }
 
 .article_link{
@@ -213,7 +243,7 @@ header h1 {
 }
 
 .article_text{
-    margin: 10.5px 49px 0px 34px;
+    padding: 10.5px 49px 37px 34px;
 }
 
 
