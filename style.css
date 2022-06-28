@@ -36,6 +36,27 @@ main {
     background-color: #111125;
 }
 
+.background_white {
+    background-color: white;
+}
+
+.background_green {
+    background-color: #27B17C;
+}
+
+.background_orange {
+    background-color: #F77F27;
+}
+
+.background_red {
+    background-color: #D85B52;
+}
+
+.background_grey{
+    background-color: #E5E2EB;
+}
+
+
 /*==================== HEADER HOME ====================*/
 .header_home {
     background-color: #f5a017;
@@ -371,39 +392,104 @@ main {
     padding: 10.5px 49px 37px 34px;
 }
 
+/*==================== MAIN WALLET ALL ====================*/
+.risk_container {
+    padding: 27px 32px 27px 45px;
+    border-bottom-left-radius: 20% 40%;
+}
+
+.risk_title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #111125;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.risk_title div {
+    display: flex;
+    align-items: center;
+}
+
+.risk_title mark {
+    opacity: 70%;
+    background-color: white;
+}
+
+.risk_title strong {
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 100%;
+}
+
+.risk_title_bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.risk_progress {
+    width: 100%;
+    height: 15px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+.risk_progress span{
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    border-radius: 30px;
+}
+
+.risk_legend,
+.risk_legend_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.risk_legend{
+    gap:25px;
+}
+
 /*==================== MAIN WALLET ANALYSE ====================*/
-.main_wallet_analyse{
+.main_wallet_analyse {
     min-height: calc(100vh - 282px);
     padding: 31px 24px;
 }
 
-.market_trends h2{
+.market_trends h2 {
     font-size: 20px;
     font-weight: 700;
-    color:white;
+    color: white;
     margin-bottom: 18px;
 }
 
-.market_trends h3{
+.market_trends h3 {
     font-size: 18px;
     font-weight: 700;
-    color:#F7A827;
+    color: #F7A827;
     margin-bottom: 34px;
 }
 
-.market_trends_cards{
+.market_trends_cards {
     display: flex;
     justify-content: space-between;
     gap: 4%;
-    color:white;
+    color: white;
     text-transform: capitalize;
     flex-wrap: wrap;
 }
 
-.market_trends_cards_container{
+.market_trends_cards_container {
     background-color: #343446;
     height: 156px;
-    padding:22px 0px;
+    padding: 22px 0px;
     width: calc(48%);
     border-radius: 15px 50px;
     display: flex;
@@ -412,18 +498,18 @@ main {
     align-items: center;
 }
 
-.market_trends_cards_container p{
+.market_trends_cards_container p {
     text-align: center;
-    font-size:13px;
+    font-size: 13px;
     font-weight: 400;
 }
 
-.market_trends_cards_container strong{
-    font-size:16px;
+.market_trends_cards_container strong {
+    font-size: 16px;
     font-weight: 700;
 }
 
-.market_trends_cards_container img{
+.market_trends_cards_container img {
     width: 100px;
 }
 

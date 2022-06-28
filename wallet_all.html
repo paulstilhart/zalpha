@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header class="background_dark">
+    <header class="background_white">
         <div class="header_wallet">
             <div class="header_wallet_title">
                 <div class="header_wallet_title_icons">
@@ -36,12 +36,44 @@
             <div class="header_wallet_tabs">
                 <a class="non_current" href="./wallet_analyse.html">Analyse du marché</a>
                 <a class="current" href="./wallet_all.html">Vue d'ensemble</a>
-                <a class="non_current" href="#">Répartition</a>
+                <a class="non_current" href="./wallet_repartition.html">Répartition</a>
             </div>
         </div>
+
+        <section class="risk background_dark">
+            <div class="risk_container background_white">
+                <div class="risk_title">
+                    <p><mark>niveau de risque</mark></p>
+                    <div>
+                        <span class="risk_title_bullet background_green"></span>
+                        <p><strong>faible</strong></p>
+                    </div>
+                </div>
+
+                <div class="risk_progress background_grey">
+                    <span class="background_green"></span>
+                </div>
+
+                <div class="risk_legend">
+                    <div class="risk_legend_container">
+                        <span class="risk_title_bullet background_green"></span>
+                        <p>faible</p>
+                    </div>
+                    <div class="risk_legend_container">
+                        <span class="risk_title_bullet background_orange"></span>
+                        <p>modéré</p>
+                    </div>
+                    <div class="risk_legend_container">
+                        <span class="risk_title_bullet background_red"></span>
+                        <p>fort</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main class="background_dark main_wallet_analyse">
+
     </main>
 
     <footer>
