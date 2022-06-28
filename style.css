@@ -11,17 +11,16 @@
 
 /*==================== REM ET VARIABLES ====================*/
 
-body{
+body {
     font-size: 16px;
     min-width: 320px;
     max-width: 425px;
     margin: auto;
 }
 
-main{
-    margin-bottom:75px;
+main {
+    margin-bottom: 75px;
 }
-
 
 
 
@@ -31,8 +30,11 @@ main{
 }
 
 
+/*==================== BACKGROUND ====================*/
 
-
+.background_dark {
+    background-color: #111125;
+}
 
 /*==================== HEADER HOME ====================*/
 .header_home {
@@ -52,13 +54,16 @@ main{
     font-size: 14px;
     font-weight: 600;
 }
-.header_home_title img{
+
+.header_home_title img {
     width: 18px;
 }
-.header_home_title_notification{
+
+.header_home_title_notification {
     position: relative;
 }
-.header_home_title_notification_number{
+
+.header_home_title_notification_number {
     font-size: 11px;
     font-weight: 700;
     color: #E5793B;
@@ -70,7 +75,7 @@ main{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top:-8px;
+    top: -8px;
     right: -8px;
 }
 
@@ -102,7 +107,7 @@ main{
     border-bottom-left-radius: 20% 40%;
 }
 
-.header_wallet_title{
+.header_wallet_title {
     margin-bottom: 19px;
 }
 
@@ -113,22 +118,25 @@ main{
     justify-content: space-between;
 }
 
-.header_wallet_title_icons img{
+.header_wallet_title_icons img {
     width: 20px;
 }
-.header_wallet_title_notification img{
+
+.header_wallet_title_notification img {
     width: 18px;
 }
+
 .header_wallet_title h1 {
     font-size: 19px;
     font-weight: 700;
     text-align: center;
 }
 
-.header_wallet_title_notification{
+.header_wallet_title_notification {
     position: relative;
 }
-.header_title_notification_number{
+
+.header_title_notification_number {
     font-size: 11px;
     font-weight: 700;
     color: #E5793B;
@@ -140,17 +148,33 @@ main{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top:-8px;
+    top: -8px;
     right: -8px;
 }
 
-.header_wallet_tabs ul{
+.header_wallet_tabs {
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
+    align-items: center;
     font-size: 11px;
+}
+
+.header_wallet_tabs a {
+    text-decoration: none;
+}
+
+.header_wallet_tabs a[class="non_current"] {
     color: #E9EBF2;
 }
+
+.header_wallet_tabs a[class="current"] {
+    font-weight: 600;
+    color: #111125;
+    background-color: white;
+    padding: 4px 13px;
+    border-radius: 11px;
+}
+
 
 /*==================== MAIN HOME ====================*/
 
@@ -162,81 +186,88 @@ main{
     font-weight: 500;
 }
 
-.progress strong{
+.progress strong {
     font-weight: 700;
     font-size: 20px;
 }
 
 .progress_date,
-.progress_origin{
+.progress_origin {
     width: 50%;
     padding: 23px 0px 28px 0px;
 }
-.progress_date{
+
+.progress_date {
     background-color: white;
     border-bottom-left-radius: 20% 40%;
 }
-.progress_origin{
+
+.progress_origin {
     background-color: rgb(233, 235, 242);
 }
 
 .progress_date_number,
-.progress_origin_number{
+.progress_origin_number {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
-    margin-top:4px;
+    gap: 10px;
+    margin-top: 4px;
 }
 
-.progress img{
-    width:16px;
+.progress img {
+    width: 16px;
     border-radius: 100%;
-    padding:5px;
+    padding: 5px;
 }
 
-.progress_date_number img{
+.progress_date_number img {
     background-color: #D85B52;
 }
-.progress_origin_number img{
+
+.progress_origin_number img {
     background-color: #27B17C;
 }
 
 
 .market {
     background-color: rgba(17, 17, 37, 1);
-    color:white;
+    color: white;
 }
-.market_title{
+
+.market_title {
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    padding:30px 14px 16px 36px;
+    padding: 30px 14px 16px 36px;
 }
-.market_title h2{
-    font-size:16px;
+
+.market_title h2 {
+    font-size: 16px;
     opacity: 70%;
     font-weight: 400;
 }
-.market_title a{
+
+.market_title a {
     font-weight: 700;
     color: white;
     text-decoration: none;
 }
-.market_title span{
+
+.market_title span {
     font-weight: 500;
 }
 
-.market_graph{
+.market_graph {
     height: 150px;
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:30px;
+    font-size: 30px;
 }
 
-.profil{
+.profil {
     background-color: rgba(17, 17, 37, 1);
     padding: 50px 24px 37px 24px;
     display: flex;
@@ -245,50 +276,51 @@ main{
 }
 
 .profil_state,
-.profil_footprint{
+.profil_footprint {
     width: 50%;
     height: 139px;
     background-color: #EFEFEF;
     border-radius: 30px;
-    padding:4%;
-    font-size:12px;
+    padding: 4%;
+    font-size: 12px;
     font-weight: 500;
     text-transform: capitalize;
     display: flex;
 }
-.profil strong{
+
+.profil strong {
     font-size: 17px;
     font-weight: 700;
 }
 
-.profil_state{
+.profil_state {
     align-items: flex-end;
 }
 
 
-.article{
+.article {
     background-color: rgba(17, 17, 37, 1);
-    color:white;
+    color: white;
     font-size: 14px;
     font-weight: 400;
 }
 
-.article_link{
+.article_link {
     margin: 0px 39px 0px 32px;
     font-size: 16px;
-    gap:10px;
+    gap: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.article_link h2{
+.article_link h2 {
     font-size: 16px;
     font-weight: 600;
 }
 
-.article_link a{
-    color:white;
+.article_link a {
+    color: white;
     background-color: rgba(17, 17, 37, 1);
     border: solid #E4E4E4 1.5px;
     border-radius: 100%;
@@ -300,12 +332,12 @@ main{
     cursor: pointer;
 }
 
-.article_link img{
+.article_link img {
     width: 20px;
     color: white;
 }
 
-.article_photo{
+.article_photo {
     margin: 20.5px 24px 17.5px 24px;
     height: 104px;
     border-radius: 10px 40px 10px 40px;
@@ -314,10 +346,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:30px;
+    font-size: 30px;
 }
 
-.article_title{
+.article_title {
     font-size: 14px;
     display: flex;
     justify-content: space-between;
@@ -325,35 +357,85 @@ main{
     margin: 0px 58px 0px 34px;
 }
 
-.article_title strong{
+.article_title strong {
     font-weight: 600;
-    color : white;
+    color: white;
 }
 
-.article_title p{
+.article_title p {
     font-weight: 400;
     color: #F3F4F5;
 }
 
-.article_text{
+.article_text {
     padding: 10.5px 49px 37px 34px;
 }
 
-/*==================== MAIN WALLET ====================*/
+/*==================== MAIN WALLET ANALYSE ====================*/
+.main_wallet_analyse{
+    min-height: calc(100vh - 282px);
+    padding: 31px 24px;
+}
 
-.test{
-    background-color: black;
-    z-index:1
+.market_trends h2{
+    font-size: 20px;
+    font-weight: 700;
+    color:white;
+    margin-bottom: 18px;
+}
+
+.market_trends h3{
+    font-size: 18px;
+    font-weight: 700;
+    color:#F7A827;
+    margin-bottom: 34px;
+}
+
+.market_trends_cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    color:white;
+    text-transform: capitalize;
+    flex-wrap: wrap;
+}
+
+.market_trends_cards_container{
+    background-color: #343446;
+    height: 156px;
+    padding:22px 0px;
+    width: calc(48%);
+    border-radius: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.market_trends_cards_container p{
+    text-align: center;
+    font-size:13px;
+    font-weight: 400;
+}
+
+.market_trends_cards_container strong{
+    font-size:16px;
+    font-weight: 700;
+}
+
+.market_trends_cards_container img{
+    width: 100px;
 }
 
 
+
 /*==================== FOOTER ====================*/
-footer{
+footer {
     position: fixed;
     bottom: 0;
     left: 0;
     background-color: white;
-    z-index:99;
+    z-index: 99;
     width: 100%;
     height: 75px;
     display: flex;
@@ -361,20 +443,20 @@ footer{
     align-items: center;
 }
 
-.footer_container{
+.footer_container {
     min-width: 320px;
     max-width: 425px;
     display: flex;
     justify-content: center;
     flex: 1;
-    gap:18%;
+    gap: 18%;
 }
 
-footer img{
+footer img {
     height: 20px;
     opacity: 40%;
 }
 
-footer img:hover{
+footer img:hover {
     opacity: 100%;
 }
