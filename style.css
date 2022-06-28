@@ -13,7 +13,8 @@
 
 html {
     font-size: 16px;
-    max-width: 375px;
+    min-width: 320px;
+    max-width: 425px;
     margin: auto;
 }
 
@@ -31,46 +32,125 @@ body{
 
 
 
-/*==================== HEADER ====================*/
-header {
+/*==================== HEADER HOME ====================*/
+.header_home {
     background-color: #f5a017;
     padding: 25px 35px 38px 35px;
     border-bottom-left-radius: 20% 40%;
 }
 
-.header_title {
+.header_home_title {
     color: rgba(17, 17, 37, 1);
     margin: 0px 0px 19px 17px;
     display: flex;
     justify-content: space-between;
 }
 
-header h1 {
+.header_home_title h1 {
     font-size: 14px;
     font-weight: 600;
 }
+.header_home_title img{
+    width: 18px;
+}
+.header_home_title_notification{
+    position: relative;
+}
+.header_home_title_notification_number{
+    font-size: 11px;
+    font-weight: 700;
+    color: #E5793B;
+    background-color: white;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:-8px;
+    right: -8px;
+}
 
-.header_content {
+.header_home_content {
     display: flex;
     flex-direction: column;
     color: white;
     font-weight: 700;
 }
 
-.header_content_name {
+.header_home_content_name {
     font-size: 15px;
     margin-bottom: 4px;
 }
 
-.header_content_name strong {
+.header_home_content_name strong {
     font-size: 19px;
 }
 
-.header_content_value {
+.header_home_content_name_value {
     font-size: 23px;
 }
 
-/*==================== MAIN ====================*/
+
+/*==================== HEADER WALLET ====================*/
+.header_wallet {
+    background-color: #f5a017;
+    padding: 25px 14px 31px 14px;
+    border-bottom-left-radius: 20% 40%;
+}
+
+.header_wallet_title{
+    margin-bottom: 19px;
+}
+
+.header_wallet_title_icons {
+    color: rgba(17, 17, 37, 1);
+    margin: 0px 22px 0px 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_wallet_title_icons img{
+    width: 20px;
+}
+.header_wallet_title_notification img{
+    width: 18px;
+}
+.header_wallet_title h1 {
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header_wallet_title_notification{
+    position: relative;
+}
+.header_title_notification_number{
+    font-size: 11px;
+    font-weight: 700;
+    color: #E5793B;
+    background-color: white;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:-8px;
+    right: -8px;
+}
+
+.header_wallet_tabs ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 11px;
+    color: #E9EBF2;
+}
+
+/*==================== MAIN HOME ====================*/
 
 .progress {
     background-color: rgba(17, 17, 37, 1);
@@ -102,27 +182,21 @@ header h1 {
 .progress_origin_number{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap:10px;
     margin-top:4px;
 }
 
-.progress_date_number div,
-.progress_origin_number div{
-    font-weight: 500;
-    font-size: 20px;
-    color:white;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.progress img{
+    width:16px;
+    border-radius: 100%;
+    padding:5px;
 }
 
-.progress_date_number div{
+.progress_date_number img{
     background-color: #D85B52;
 }
-.progress_origin_number div{
+.progress_origin_number img{
     background-color: #27B17C;
 }
 
@@ -142,8 +216,10 @@ header h1 {
     opacity: 70%;
     font-weight: 400;
 }
-.market_title div{
+.market_title a{
     font-weight: 700;
+    color: white;
+    text-decoration: none;
 }
 .market_title span{
     font-weight: 500;
@@ -151,36 +227,39 @@ header h1 {
 
 .market_graph{
     height: 150px;
-    background-color: white;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
 }
 
 .profil{
     background-color: rgba(17, 17, 37, 1);
-    padding: 50px 24px 37px 20px;
+    padding: 50px 24px 37px 24px;
     display: flex;
     justify-content: space-between;
-    gap: 15px;
-    height: 139px;
+    gap: 4%;
 }
 
-.profil_card,
+.profil_state,
 .profil_footprint{
     width: 50%;
-    height: 109px;
+    height: 139px;
     background-color: #EFEFEF;
     border-radius: 30px;
-    padding:15px;
-    display: flex;
+    padding:4%;
     font-size:12px;
     font-weight: 500;
     text-transform: capitalize;
+    display: flex;
 }
 .profil strong{
     font-size: 17px;
     font-weight: 700;
 }
 
-.profil_card{
+.profil_state{
     align-items: flex-end;
 }
 
@@ -188,13 +267,17 @@ header h1 {
 .article{
     background-color: rgba(17, 17, 37, 1);
     color:white;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .article_link{
     margin: 0px 39px 0px 32px;
-    display: flex;
-    gap:10px;
     font-size: 16px;
+    gap:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .article_link h2{
@@ -202,26 +285,34 @@ header h1 {
     font-weight: 600;
 }
 
-.article_link button{
-    font-weight: 500;
-    font-size: 20px;
+.article_link a{
     color:white;
     background-color: rgba(17, 17, 37, 1);
-    border: solid #E4E4E4 1px;
+    border: solid #E4E4E4 1.5px;
     border-radius: 100%;
+    padding: 10px;
     flex: none;
-    width: 39px;
-    height: 39px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.article_link img{
+    width: 20px;
+    color: white;
 }
 
 .article_photo{
     margin: 20.5px 24px 17.5px 24px;
     height: 104px;
-    background-color: white;
     border-radius: 10px 40px 10px 40px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
 }
 
 .article_title{
@@ -246,6 +337,13 @@ header h1 {
     padding: 10.5px 49px 37px 34px;
 }
 
+/*==================== MAIN WALLET ====================*/
+
+.test{
+    background-color: black;
+    z-index:1
+}
+
 
 /*==================== FOOTER ====================*/
 footer{
@@ -259,5 +357,22 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:70px;
+}
+
+.footer_container{
+    min-width: 320px;
+    max-width: 425px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap:18%;
+}
+
+footer img{
+    height: 20px;
+    opacity: 40%;
+}
+
+footer img:hover{
+    opacity: 100%;
 }

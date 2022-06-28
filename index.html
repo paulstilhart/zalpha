@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil débutant</title>
+    <title>Profil débutant - Accueil</title>
 
     <!-- FEUILLE DE STYLE CSS -->
     <link rel="stylesheet" href="./style.css">
@@ -21,16 +21,19 @@
 </head>
 
 <body>
-    <header>
-        <div class="header_title">
+    <header class="header_home">
+        <div class="header_home_title">
             <h1>Tableau de bord</h1>
-            <div class="header_title_notification">cloche</div>
+            <a href="#" class="header_home_title_notification">
+                <img src="./sources/icons/bell-regular.svg" alt="icon notification">
+                <span class="header_home_title_notification_number">5</span>
+            </a>
         </div>
-        <div class="header_content">
-            <p class="header_content_name"><strong>Bonjour Henri,</strong>
+        <div class="header_home_content">
+            <p class="header_home_content_name"><strong>Bonjour Henri,</strong>
                 <br>Votre valeur portefeuille
             </p>
-            <p class="header_content_value">12 456,48 €</p>
+            <p class="header_home_content_name_value">12 456,48 €</p>
         </div>
     </header>
 
@@ -40,14 +43,14 @@
                 <p>Depuis 9 Mars 2022</p>
                 <div class="progress_date_number">
                     <p><strong>- 3,2 %</strong></p>
-                    <div>&#x2198;</div>
+                    <img src="./sources/icons/south_east_FILL0_wght700_GRAD0_opsz48.svg" alt="decrease arrow">
                 </div>
             </div>
             <div class="progress_origin">
                 <p>Depuis l’origine</p>
                 <div class="progress_origin_number">
                     <p><strong>+ 2,1 %</strong></p>
-                    <div>&#x2197;</div>
+                    <img src="./sources/icons/call_made_FILL0_wght700_GRAD0_opsz48.svg" alt="increase arrow">
                 </div>
             </div>
         </section>
@@ -55,13 +58,15 @@
         <section class="market">
             <div class="market_title">
                 <h2>Tendances de marché</h2>
-                <div>SP500<span>&ensp;&#129122;</span></div>
+                <a href="#">SP500<span>&ensp;&#129122;</span></a>
             </div>
-            <div class="market_graph"></div>
+            <div class="market_graph">
+                placeholder graphique
+            </div>
         </section>
 
         <section class="profil">
-            <div class="profil_card">
+            <div class="profil_state">
                 <p>Profil
                     <br><strong>Prudent</strong>
                 </p>
@@ -76,7 +81,8 @@
         <section class="article">
             <div class="article_link">
                 <h2>Curabitur ac consectetur metus, quis sodales magna.</h2>
-                <button>&#129122;</button>
+                <a href="#"><img src="./sources/icons/arrow_forward_FILL0_wght400_GRAD0_opsz48.svg"
+                        alt="arrow right"></a>
             </div>
             <div class="article_photo">
                 placeholder photo
@@ -96,10 +102,12 @@
     </main>
 
     <footer>
-        <div>&#x1F64B;</div>
-        <div>&#x1F64B;</div>
-        <div>&#x1F64B;</div>
-        <div>&#x1F64B;</div>
+        <div class="footer_container">
+            <a href="./wallet.html"><img src="./sources/icons/wallet-solid.svg" alt="icone wallet"></a>
+            <a href="./index.html"><img src="./sources/icons/home-solid.svg" alt="icone maison"></a>
+            <a href="#"><img src="./sources/icons/user-solid.svg" alt="icone user"></a>
+            <a href="#"><img src="./sources/icons/ellipsis-h-solid.svg" alt="icone menu"></a>
+        </div>
     </footer>
 
 
