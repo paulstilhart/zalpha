@@ -15,11 +15,15 @@ body {
     font-size: 16px;
     min-width: 320px;
     max-width: 425px;
+    min-height: 100vh;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
     margin-bottom: 75px;
+    flex: 1;
 }
 
 p {
@@ -28,12 +32,24 @@ p {
     font-size: 14px;
 }
 
+em {
+    font-weight: 600;
+    font-style: normal;
+}
+
+mark {
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: 500;
+}
+
 strong {
     font-weight: 700;
 }
 
-em {
-    font-weight: 600;
+
+
+.fs_16 {
+    font-size: 16px;
 }
 
 /*==================== CLASSES UTILITAIRES ====================*/
@@ -57,7 +73,7 @@ em {
     align-items: center;
 }
 
-.flex_start_center{
+.flex_start_center {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -70,14 +86,19 @@ em {
 }
 
 
-/*==================== BACKGROUND ====================*/
-.color_white{
-    color: white;
+/*==================== COLORS ====================*/
+.opacity_70 {
+    opacity: 70%;
 }
 
-.circle_white{
+.circle_white {
     background-color: white;
     border-radius: 100%;
+}
+
+
+.color_white {
+    color: white;
 }
 
 .background_dark {
@@ -90,6 +111,10 @@ em {
 
 .background_green {
     background-color: #27B17C;
+}
+
+.background_orange_soft {
+    background-color: #f5a017;
 }
 
 .background_orange {
@@ -107,7 +132,6 @@ em {
 
 /*==================== HEADER HOME ====================*/
 .header_home {
-    background-color: #f5a017;
     padding: 25px 35px 38px 35px;
     border-bottom-left-radius: 20% 40%;
 }
@@ -273,7 +297,6 @@ em {
 /*==================== MAIN HOME ====================*/
 
 .progress {
-    background-color: rgba(17, 17, 37, 1);
     display: flex;
     text-align: center;
     font-size: 12px;
@@ -292,11 +315,11 @@ em {
 
 .progress_date {
     background-color: white;
-    border-bottom-left-radius: 20% 40%;
+    border-bottom-left-radius: 30% 50%;
 }
 
 .progress_origin {
-    background-color: rgb(233, 235, 242);
+    background-color: #e9ebf2;
 }
 
 .progress_date_number,
@@ -529,6 +552,137 @@ em {
     gap: 25px;
 }
 
+.durability {
+    padding: 20px 21px 21px 28px;
+}
+
+.durability h2,
+.repartition h2 {
+    margin-bottom: 19px;
+}
+
+.durability_cards {
+    display: flex;
+    gap: 4%;
+}
+
+.durability_cards p {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+.durability_cards div {
+    width: 48%;
+    height: 139px;
+    padding: 15px;
+    background-color: #343443;
+    border-radius: 30px;
+}
+
+.repartition {
+    padding: 0px 40px 0px 36px;
+}
+
+.repartition_container {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.repartition_container span {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    margin-right: 12px;
+    background-color: #2594DD;
+}
+
+.evolution {
+    padding: 28px 16px 30px 28px;
+}
+
+.evolution_container {
+    padding: 22px 15px 32px 20px;
+    background-color: #343443;
+    border-radius: 20px;
+}
+
+.evolution_container a{
+    text-decoration: none;
+    color:white;
+}
+.evolution_container_number{
+    display: flex;
+    gap:9px;
+    align-items: center;
+}
+
+.evolution_container_number h3{
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+}
+.evolution_container_number strong{
+    font-size: 11px;
+    color:#27B17C;
+}
+.evolution_container_number img{
+    background-color:#27B17C;
+    border-radius: 100%;
+    width: 10px;
+    padding:2px;
+}
+.evolution_container p{
+    font-size:11px;
+    color:#7C7C8B;
+}
+
+.evolution_border {
+    padding-bottom: 17px;
+    margin-bottom: 17px;
+    border-bottom: solid 1.5px #53535F;
+}
+
+.evolution_progress{
+    display: flex;
+    align-items: center;
+    gap:11px;
+    margin-top:11px;
+}
+.evolution_progress_container{
+    height: 14px;
+    background-color: #111125;
+    border-radius: 30px;
+    flex:1;
+}
+
+.evolution_progress_bar{
+    height: 14px;
+    background-color: #2594DD;
+    border-radius: 30px;
+    width: 20%;
+    position: relative;
+}
+
+.evolution_progress_bar span{
+    display:inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top:-2px;
+}
+
+.evolution_progress p{
+    font-size:14px;
+    color:white;
+}
+
+
 /*==================== MAIN WALLET ANALYSE ====================*/
 .main_wallet_analyse {
     min-height: calc(100vh - 282px);
@@ -610,26 +764,27 @@ em {
 .wallet_history {
     flex-direction: column;
     margin: 35px 0px 0px 50px;
-    gap:12px;
+    gap: 12px;
 }
 
-.wallet_history_date strong{
-    font-size:16px;
+.wallet_history_date strong {
+    font-size: 16px;
 }
-.wallet_history_number strong{
+
+.wallet_history_number strong {
     font-size: 30px;
 }
 
-.wallet_history_number img{
+.wallet_history_number img {
     margin-left: 10px;
     width: 25px;
     height: 25px;
-    padding:5px;
+    padding: 5px;
 }
 
-.wallet_wait{
-    padding:30px;
-    font-size:30px;
+.wallet_wait {
+    padding: 30px;
+    font-size: 30px;
 }
 
 /*==================== FOOTER ====================*/
