@@ -22,6 +22,46 @@ main {
     margin-bottom: 75px;
 }
 
+p {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-weight: 600;
+}
+
+/*==================== CLASSES UTILITAIRES ====================*/
+.flex {
+    display: flex;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_between_center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_start_center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 
 /*==================== TYPE DE POLICE ====================*/
@@ -31,6 +71,14 @@ main {
 
 
 /*==================== BACKGROUND ====================*/
+.color_white{
+    color: white;
+}
+
+.circle_white{
+    background-color: white;
+    border-radius: 100%;
+}
 
 .background_dark {
     background-color: #111125;
@@ -52,7 +100,7 @@ main {
     background-color: #D85B52;
 }
 
-.background_grey{
+.background_grey {
     background-color: #E5E2EB;
 }
 
@@ -88,8 +136,6 @@ main {
     font-size: 11px;
     font-weight: 700;
     color: #E5793B;
-    background-color: white;
-    border-radius: 100%;
     width: 18px;
     height: 18px;
     display: flex;
@@ -161,8 +207,6 @@ main {
     font-size: 11px;
     font-weight: 700;
     color: #E5793B;
-    background-color: white;
-    border-radius: 100%;
     width: 18px;
     height: 18px;
     display: flex;
@@ -173,28 +217,57 @@ main {
     right: -8px;
 }
 
-.header_wallet_tabs {
+.header_wallet_tabs,
+.header_wallet_tab {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 11px;
 }
 
-.header_wallet_tabs a {
+.header_wallet_tabs {
+    justify-content: space-between;
+}
+
+.header_wallet_tab {
+    justify-content: center;
+}
+
+
+.header_wallet_tabs a,
+.header_wallet_tab a {
     text-decoration: none;
 }
 
-.header_wallet_tabs a[class="non_current"] {
+.header_wallet_tabs a[class="non_current"],
+.header_wallet_tab a[class="non_current"] {
     color: #E9EBF2;
 }
 
-.header_wallet_tabs a[class="current"] {
+.header_wallet_tabs a[class="current"],
+.header_wallet_tab a[class="current"] {
     font-weight: 600;
     color: #111125;
     background-color: white;
     padding: 4px 13px;
     border-radius: 11px;
 }
+
+.header_wallet h2,
+.header_wallet h3 {
+    font-size: 14px;
+}
+
+.header_wallet h2 {
+    font-weight: 600;
+}
+
+.header_wallet h3 {
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    margin: 8px 0px -15px 0px;
+}
+
 
 
 /*==================== MAIN HOME ====================*/
@@ -208,7 +281,6 @@ main {
 }
 
 .progress strong {
-    font-weight: 700;
     font-size: 20px;
 }
 
@@ -273,10 +345,13 @@ main {
     font-weight: 700;
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
-.market_title span {
-    font-weight: 500;
+.market_title img {
+    width: 20px;
+    margin-left: 8px;
 }
 
 .market_graph {
@@ -311,7 +386,6 @@ main {
 
 .profil strong {
     font-size: 17px;
-    font-weight: 700;
 }
 
 .profil_state {
@@ -378,13 +452,11 @@ main {
     margin: 0px 58px 0px 34px;
 }
 
-.article_title strong {
-    font-weight: 600;
+.article_title em {
     color: white;
 }
 
 .article_title p {
-    font-weight: 400;
     color: #F3F4F5;
 }
 
@@ -420,7 +492,6 @@ main {
 
 .risk_title strong {
     font-size: 20px;
-    font-weight: 700;
     opacity: 100%;
 }
 
@@ -438,7 +509,8 @@ main {
     margin-bottom: 15px;
     border-radius: 30px;
 }
-.risk_progress span{
+
+.risk_progress span {
     display: inline-block;
     height: 100%;
     width: 30%;
@@ -453,8 +525,8 @@ main {
     text-transform: capitalize;
 }
 
-.risk_legend{
-    gap:25px;
+.risk_legend {
+    gap: 25px;
 }
 
 /*==================== MAIN WALLET ANALYSE ====================*/
@@ -501,19 +573,64 @@ main {
 .market_trends_cards_container p {
     text-align: center;
     font-size: 13px;
-    font-weight: 400;
 }
 
 .market_trends_cards_container strong {
     font-size: 16px;
-    font-weight: 700;
 }
 
 .market_trends_cards_container img {
     width: 100px;
 }
 
+/*==================== MAIN WALLET ONE ====================*/
+.main_wallet_one {
+    min-height: calc(100vh - 234px);
+}
 
+.wallet_infos {
+    padding: 28px 40px 42px 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #111125;
+    text-transform: capitalize;
+    border-bottom-left-radius: 20% 40%;
+}
+
+.wallet_infos a {
+    color: #111125;
+}
+
+.wallet_infos_border {
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+    border-bottom: solid 1.5px #DADDE8;
+}
+
+.wallet_history {
+    flex-direction: column;
+    margin: 35px 0px 0px 50px;
+    gap:12px;
+}
+
+.wallet_history_date strong{
+    font-size:16px;
+}
+.wallet_history_number strong{
+    font-size: 30px;
+}
+
+.wallet_history_number img{
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    padding:5px;
+}
+
+.wallet_wait{
+    padding:30px;
+    font-size:30px;
+}
 
 /*==================== FOOTER ====================*/
 footer {

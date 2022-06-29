@@ -33,46 +33,48 @@
                 </div>
                 <h1>Mon portefeuille</h1>
             </div>
-            <div class="header_wallet_tabs">
-                <a class="non_current" href="./wallet_analyse.html">Analyse du marché</a>
-                <a class="current" href="./wallet_all.html">Vue d'ensemble</a>
-                <a class="non_current" href="./wallet_repartition.html">Répartition</a>
+            <div class="header_wallet_tab">
+                <a class="current" href="./wallet_one.html">
+                    <h2>Mandarine Reflex R</h2>
+                </a>
             </div>
+            <h3>Equities Europe Dividend B</h3>
         </div>
-
-        <section class="risk background_dark">
-            <div class="risk_container background_white">
-                <div class="risk_title">
-                    <p><mark>niveau de risque</mark></p>
-                    <div>
-                        <span class="risk_title_bullet background_green"></span>
-                        <p><strong>faible</strong></p>
-                    </div>
-                </div>
-
-                <div class="risk_progress background_grey">
-                    <span class="background_green"></span>
-                </div>
-
-                <div class="risk_legend">
-                    <div class="risk_legend_container">
-                        <span class="risk_title_bullet background_green"></span>
-                        <p>faible</p>
-                    </div>
-                    <div class="risk_legend_container">
-                        <span class="risk_title_bullet background_orange"></span>
-                        <p>modéré</p>
-                    </div>
-                    <div class="risk_legend_container">
-                        <span class="risk_title_bullet background_red"></span>
-                        <p>fort</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </header>
 
-    <main class="background_dark main_wallet_analyse">
+    <main class="background_dark main_wallet_one">
+
+        <section class="wallet_infos background_white">
+            <div class="flex_between_center wallet_infos_border">
+                <p>Code ISIN</p>
+                <p>IE00B1FZS798</p>
+            </div>
+            <div class="flex_between_center wallet_infos_border">
+                <p>Catégorie</p>
+                <p>SOV</p>
+            </div>
+            <div class="flex_between_center wallet_infos_border">
+                <p>Devise</p>
+                <p>USD</p>
+            </div>
+            <div class="flex_between_center">
+                <p>DICI</p>
+                <a href="#">TÉLÉCHARGER</a>
+            </div>
+        </section>
+
+        <section class="wallet_history flex color_white">
+            <p class="wallet_history_date"><strong>historique</strong>
+                <br><span>Janvier - Juin 2021</span>
+            </p>
+            <div class="wallet_history_number flex_start_center">
+                <p><strong>+1,4%</strong></p>
+                <img class="circle_white" src="./sources/icons/call_made_green_FILL0_wght700_GRAD0_opsz48.svg" alt="">
+            </div>
+            <div class="wallet_wait flex_center_center">
+                PLACEHOLDER GRAPHIQUE
+            </div>
+        </section>
 
     </main>
 
