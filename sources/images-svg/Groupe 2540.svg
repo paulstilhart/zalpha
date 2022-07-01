@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Groupe_2540" data-name="Groupe 2540" transform="translate(-29.5 -148.122)">
+    <rect id="Rectangle_2209" data-name="Rectangle 2209" width="24" height="24" rx="12" transform="translate(29.5 148.122)" fill="#d85b52"/>
+    <g id="Groupe_2520" data-name="Groupe 2520" transform="translate(35.93 154.009)">
+      <path id="Tracé_2308" data-name="Tracé 2308" d="M-3790.074-8545.859a1.06,1.06,0,0,1-.755-.312l-8.482-8.482a1.068,1.068,0,0,1,0-1.51,1.068,1.068,0,0,1,1.509,0l8.482,8.483a1.067,1.067,0,0,1,0,1.509A1.061,1.061,0,0,1-3790.074-8545.859Z" transform="translate(3799.624 8556.477)" fill="#fff"/>
+      <path id="Tracé_2309" data-name="Tracé 2309" d="M-3787.766-8543.383h-5.681a1.068,1.068,0,0,1-1.067-1.067,1.067,1.067,0,0,1,1.067-1.068h4.613v-4.411a1.066,1.066,0,0,1,1.067-1.066,1.066,1.066,0,0,1,1.067,1.066v5.479A1.067,1.067,0,0,1-3787.766-8543.383Z" transform="translate(3797.316 8554.001)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
