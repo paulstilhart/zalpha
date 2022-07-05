@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil ado - Portefeuille</title>
+
+    <!-- FEUILLE DE STYLE CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- GOOGLE FONT MONSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header class="background_white">
+        <div class="header_wallet">
+            <div class="header_wallet_title">
+                <div class="header_wallet_title_icons">
+                    <a href="#"><img src="../sources/icons/arrow_back_wght400.svg" alt="back"></a>
+                    <a href="#" class="header_wallet_title_notification">
+                        <img src="../sources/icons/notification_icon.svg" alt="icon notification">
+                        <span class="header_title_notification_number circle_white">5</span>
+                    </a>
+                </div>
+                <h1>Mon portefeuille</h1>
+            </div>
+            <div class="header_wallet_tabs">
+                <a class="non_current" href="./wallet_analyse.html">Analyse du marché</a>
+                <a class="current" href="./wallet_all.html">Vue d'ensemble</a>
+                <a class="non_current" href="./wallet_repartition.html">Répartition</a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main class="background_dark">
+
+        <!-- SECTION NIVEAU DE RISQUE JAUGE -->
+        <section class="risk">
+            <div class="risk_container background_white">
+                <div class="risk_title">
+                    <p><mark>niveau de risque</mark></p>
+                    <div>
+                        <span class="risk_title_bullet background_green"></span>
+                        <p><strong>faible</strong></p>
+                    </div>
+                </div>
+
+                <div class="risk_progress background_grey">
+                    <span class="background_green"></span>
+                </div>
+
+                <div class="risk_legend">
+                    <div class="risk_legend_container">
+                        <span class="risk_title_bullet background_green"></span>
+                        <p>faible</p>
+                    </div>
+                    <div class="risk_legend_container">
+                        <span class="risk_title_bullet background_orange"></span>
+                        <p>modéré</p>
+                    </div>
+                    <div class="risk_legend_container">
+                        <span class="risk_title_bullet background_red"></span>
+                        <p>fort</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION INVESTISSEMENT DURABLE - EMPRUNTE CARBONE -->
+        <section class="durability color_white">
+            <h2 class="fs_16 opacity_70"><strong>Investissement durable</strong></h2>
+            <div class="durability_cards">
+                <div class="durability_cards_container">
+                    <p>Investissement
+                        <br><strong class="fs_16">Durable</strong>
+                    </p>
+                    <img class="durability_cards_image_investment" src="../sources/images/investissement_durable_1.svg" alt="emprunte carbone 1">
+                </div>
+                <div class="durability_cards_container">
+                    <p>Emprunte
+                        <br><strong class="fs_16">Carbone</strong>
+                    </p>
+                    <img class="durability_cards_image_footprint" src="../sources/images/emprunte_carbone_1.svg" alt="emprunte carbone 1">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION REPARTITION DU PORTEFEUILLE -->
+        <section class="repartition color_white">
+            <h2 class="fs_16 opacity_70"><strong>Répartition du portefeuille</strong></h2>
+            <div class="repartition_container">
+                <div class="flex_between">
+                    <p><span></span>Action Europe</p>
+                    <p><em>65%</em></p>
+                </div>
+                <div class="flex_between">
+                    <p><span></span>Action Amérique</p>
+                    <p><em>15%</em></p>
+                </div>
+                <div class="flex_between">
+                    <p><span></span>Action Asie</p>
+                    <p><em>8%</em></p>
+                </div>
+                <div class="flex_between">
+                    <p><span></span>Action Pays émergents</p>
+                    <p><em>7%</em></p>
+                </div>
+                <div class="flex_between">
+                    <p><span></span>Action Pays développés</p>
+                    <p><em>5%</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION EVOLUTION DU PORTEFEUILLE -->
+        <section class="evolution color_white">
+            <div class="evolution_container">
+                <div class="evolution_border">
+                    <a href="./wallet_one.html">
+                        <div class="evolution_container_number">
+                            <h3>Mandarine Reflex R</h3>
+                            <p><strong>+2,8 %</strong></p>
+                            <img src="../sources/icons/arrow_up_white_greenbackground.svg" alt="fleche up blanche font vert">
+                        </div>
+                        <p>Nom banque - Société de gestion</p>
+                    </a>
+                    <div class="evolution_progress">
+                        <div class="evolution_progress_container">
+                            <div class="evolution_progress_bar">
+                                <span></span>
+                            </div>
+                        </div>
+                        <p><em>20%</em></p>
+                    </div>
+                </div>
+
+                <div class="evolution_border">
+                    <a href="./wallet_one.html">
+                        <div class="evolution_container_number">
+                            <h3>Mandarine Reflex R</h3>
+                            <p><strong>+2,8 %</strong></p>
+                            <img src="../sources/icons/arrow_up_white_greenbackground.svg" alt="fleche up blanche font vert">
+                        </div>
+                        <p>Nom banque - Société de gestion</p>
+                    </a>
+                    <div class="evolution_progress">
+                        <div class="evolution_progress_container">
+                            <div class="evolution_progress_bar">
+                                <span></span>
+                            </div>
+                        </div>
+                        <p><em>20%</em></p>
+                    </div>
+                </div>
+
+                <div class="evolution_border">
+                    <a href="./wallet_one.html">
+                        <div class="evolution_container_number">
+                            <h3>Mandarine Reflex R</h3>
+                            <p><strong>+2,8 %</strong></p>
+                            <img src="../sources/icons/arrow_up_white_greenbackground.svg" alt="fleche up blanche font vert">
+                        </div>
+                        <p>Nom banque - Société de gestion</p>
+                    </a>
+                    <div class="evolution_progress">
+                        <div class="evolution_progress_container">
+                            <div class="evolution_progress_bar">
+                                <span></span>
+                            </div>
+                        </div>
+                        <p><em>20%</em></p>
+                    </div>
+                </div>
+
+                <div class="evolution_border">
+                    <a href="./wallet_one.html">
+                        <div class="evolution_container_number">
+                            <h3>Mandarine Reflex R</h3>
+                            <p><strong>+2,8 %</strong></p>
+                            <img src="../sources/icons/arrow_up_white_greenbackground.svg" alt="fleche up blanche font vert">
+                        </div>
+                        <p>Nom banque - Société de gestion</p>
+                    </a>
+                    <div class="evolution_progress">
+                        <div class="evolution_progress_container">
+                            <div class="evolution_progress_bar">
+                                <span></span>
+                            </div>
+                        </div>
+                        <p><em>20%</em></p>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./wallet_one.html">
+                        <div class="evolution_container_number">
+                            <h3>Mandarine Reflex R</h3>
+                            <p><strong>+2,8 %</strong></p>
+                            <img src="../sources/icons/arrow_up_white_greenbackground.svg" alt="fleche up blanche font vert">
+                        </div>
+                        <p>Nom banque - Société de gestion</p>
+                    </a>
+                    <div class="evolution_progress">
+                        <div class="evolution_progress_container">
+                            <div class="evolution_progress_bar">
+                                <span></span>
+                            </div>
+                        </div>
+                        <p><em>20%</em></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <a href="./wallet_all.html"><img src="../sources/icons/footer_wallet.svg" alt="footer wallet"></a>
+            <a href="../index.html"><img src="../sources/icons/footer_home.svg" alt="footer maison"></a>
+            <a href="#"><img src="../sources/icons/footer_user.svg" alt="footer user"></a>
+            <a href="#"><img src="../sources/icons/footer_menu.svg" alt="footer menu"></a>
+        </div>
+    </footer>
+
+
+
+</body>
+
+
+
+</html>

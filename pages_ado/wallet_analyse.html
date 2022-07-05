@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil débutant - Répartition</title>
+    <title>Profil ado - Analyse</title>
 
     <!-- FEUILLE DE STYLE CSS -->
     <link rel="stylesheet" href="../style.css">
@@ -21,33 +21,55 @@
 </head>
 
 <body>
-    <header class="background_dark">
-        <div class="header_wallet">
+    <header class="background_green">
+        <div class="header_wallet ado">
             <div class="header_wallet_title">
                 <div class="header_wallet_title_icons">
-                    <a href="#"><img src="../sources/icons/arrow_back_wght400.svg" alt="fleche arriere"></a>
+                    <a href="#"><img src="../sources/icons/arrow_back_wght400.svg" alt="flèche arrière noire"></a>
                     <a href="#" class="header_wallet_title_notification">
-                        <img src="../sources/icons/notification_icon.svg" alt="icon notification">
+                        <img src="../sources/icons/notification_icon.svg" alt="icone notification">
                         <span class="header_title_notification_number circle_white">5</span>
                     </a>
                 </div>
                 <h1>Mon portefeuille</h1>
             </div>
             <div class="header_wallet_tabs">
-                <a class="non_current" href="./wallet_analyse.html">Analyse du marché</a>
+                <a class="current" href="./wallet_analyse.html">Analyse du marché</a>
                 <a class="non_current" href="./wallet_all.html">Vue d'ensemble</a>
-                <a class="current" href="#">Répartition</a>
+                <a class="non_current" href="./wallet_repartition.html">Répartition</a>
             </div>
         </div>
     </header>
 
-    <main class="background_dark main_wallet_analyse">
+    <main class="background_green">
+        <div class="background_purple main_wallet_analyse ado">
+
+            <section class="market_trends">
+                <h2 class="ado">Tendances de marché</h2>
+                <h3 class="ado">Ven. 25 février 2022</h3>
+                <div class="market_trends_cards">
+                    <div class="market_trends_cards_container ado">
+                        <p>environnement
+                            <br><strong>positif</strong>
+                        </p>
+                        <img src="../sources/images/environnement_positif.svg" alt="environnement">
+                    </div>
+                    <div class="market_trends_cards_container ado">
+                        <p>volatilité
+                            <br><strong>tension</strong>
+                        </p>
+                        <img src="../sources/images/volatilite_tension.svg" alt="volatilité">
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </main>
 
     <footer>
         <div class="footer_container">
             <a href="./wallet_all.html"><img src="../sources/icons/footer_wallet.svg" alt="footer wallet"></a>
-            <a href="../index.html"><img src="../sources/icons/footer_home.svg" alt="footer maison"></a>
+            <a href="../index_ado.html"><img src="../sources/icons/footer_home.svg" alt="footer maison"></a>
             <a href="#"><img src="../sources/icons/footer_user.svg" alt="footer user"></a>
             <a href="#"><img src="../sources/icons/footer_menu.svg" alt="footer menu"></a>
         </div>

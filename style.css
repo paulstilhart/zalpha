@@ -109,12 +109,16 @@ strong {
     background-color: white;
 }
 
+.background_purple {
+    background-color: #5B41B1;
+}
+
 .background_green {
     background-color: #27B17C;
 }
 
 .background_orange_soft {
-    background-color: #f5a017;
+    background-color: #F7A827;
 }
 
 .background_orange {
@@ -210,6 +214,10 @@ strong {
     background-color: #f5a017;
     padding: 25px 14px 31px 14px;
     border-bottom-left-radius: 20% 40%;
+}
+
+.header_wallet.ado {
+    background-color:rgba(255, 255, 255, 0);
 }
 
 .header_wallet_title {
@@ -735,6 +743,11 @@ strong {
     padding: 31px 24px;
 }
 
+.main_wallet_analyse.ado {
+    padding: 51px 24px;
+    border-top-left-radius: 100px 100px;
+}
+
 .market_trends h2 {
     font-size: 20px;
     font-weight: 700;
@@ -742,11 +755,22 @@ strong {
     margin-bottom: 18px;
 }
 
+.market_trends h2[class="ado"] {
+    margin-bottom: 5px;
+    margin-left:20px;
+}
+
 .market_trends h3 {
     font-size: 18px;
     font-weight: 700;
     color: #F7A827;
     margin-bottom: 34px;
+}
+
+.market_trends h3[class="ado"] {
+    color: #27B17C;
+    margin-bottom: 45px;
+    margin-left:20px;
 }
 
 .market_trends_cards {
@@ -768,6 +792,10 @@ strong {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.market_trends_cards_container.ado{
+    background-color: rgba(255, 255, 255, 0.16);
 }
 
 .market_trends_cards_container p {
