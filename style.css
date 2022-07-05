@@ -600,6 +600,7 @@ strong {
 .durability.ado {
     padding: 32px 21px 21px 28px;
     border-top-left-radius: 80px 80px;
+    overflow: hidden;
 }
 
 .durability h2,
