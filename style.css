@@ -113,6 +113,10 @@ strong {
     background-color: #5B41B1;
 }
 
+.background_purple_strong{
+    background-color: #442D90;
+}
+
 .background_green {
     background-color: #27B17C;
 }
@@ -141,7 +145,7 @@ strong {
     position: relative;
 }
 
-.header_home_ananas{
+.header_home_ananas {
     position: absolute;
     right: 5%;
     bottom: -5%;
@@ -217,7 +221,7 @@ strong {
 }
 
 .header_wallet.ado {
-    background-color:rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .header_wallet_title {
@@ -408,7 +412,7 @@ strong {
     gap: 4%;
 }
 
-.profil p{
+.profil p {
     z-index: 1;
 }
 
@@ -434,14 +438,14 @@ strong {
     align-items: flex-end;
 }
 
-.profil_state img{
+.profil_state img {
     position: absolute;
     bottom: 0;
     right: 5%;
     height: 125%;
 }
 
-.profil_footprint img{
+.profil_footprint img {
     position: absolute;
     bottom: -5%;
     right: -5%;
@@ -526,6 +530,11 @@ strong {
     border-bottom-left-radius: 20% 40%;
 }
 
+.risk_container.ado {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 80px 80px;
+}
+
 .risk_title {
     font-size: 16px;
     font-weight: 400;
@@ -588,10 +597,18 @@ strong {
 .durability {
     padding: 20px 21px 21px 28px;
 }
+.durability.ado {
+    padding: 32px 21px 21px 28px;
+    border-top-left-radius: 80px 80px;
+}
 
 .durability h2,
 .repartition h2 {
     margin-bottom: 19px;
+}
+
+.durability h2.ado{
+    margin-left: 21px;
 }
 
 .durability_cards {
@@ -614,6 +631,10 @@ strong {
     position: relative;
 }
 
+.durability_cards_container.ado {
+    background-color: #2D1F5A;
+}
+
 .durability_cards_container img {
     position: absolute;
     z-index: 1;
@@ -633,6 +654,11 @@ strong {
 
 .repartition {
     padding: 0px 40px 0px 36px;
+}
+
+.repartition.ado {
+    padding: 30px 40px 39px 36px;
+    border-top-left-radius: 80px 80px;
 }
 
 .repartition_container {
@@ -736,6 +762,23 @@ strong {
     color: white;
 }
 
+.wallet_cards_container{
+    padding-left:21px;
+    overflow-x:scroll;
+    display: flex;
+    flex:none;
+    flex-wrap: none;
+    gap:18px;
+}
+
+.wallet_card {
+    flex:none;
+    width: 184px;
+    height: 194px;
+    padding: 22px 0px;
+    border-radius: 15px 50px;
+}
+
 
 /*==================== MAIN WALLET ANALYSE ====================*/
 .main_wallet_analyse {
@@ -745,7 +788,7 @@ strong {
 
 .main_wallet_analyse.ado {
     padding: 51px 24px;
-    border-top-left-radius: 100px 100px;
+    border-top-left-radius: 80px 80px;
 }
 
 .market_trends h2 {
@@ -757,7 +800,7 @@ strong {
 
 .market_trends h2[class="ado"] {
     margin-bottom: 5px;
-    margin-left:20px;
+    margin-left: 20px;
 }
 
 .market_trends h3 {
@@ -770,7 +813,7 @@ strong {
 .market_trends h3[class="ado"] {
     color: #27B17C;
     margin-bottom: 45px;
-    margin-left:20px;
+    margin-left: 20px;
 }
 
 .market_trends_cards {
@@ -794,7 +837,7 @@ strong {
     align-items: center;
 }
 
-.market_trends_cards_container.ado{
+.market_trends_cards_container.ado {
     background-color: rgba(255, 255, 255, 0.16);
 }
 
@@ -826,6 +869,12 @@ strong {
     border-bottom-left-radius: 20% 40%;
 }
 
+.wallet_infos.ado {
+    padding: 37px 40px 42px 50px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 80px 80px;
+}
+
 .wallet_infos a {
     color: #111125;
 }
@@ -838,8 +887,12 @@ strong {
 
 .wallet_history {
     flex-direction: column;
-    margin: 35px 0px 0px 50px;
+    padding: 35px 0px 0px 50px;
     gap: 12px;
+}
+
+.wallet_history.ado {
+    border-top-left-radius: 80px 80px;
 }
 
 .wallet_history_date strong {
