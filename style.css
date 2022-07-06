@@ -163,6 +163,10 @@ strong {
     position: relative;
 }
 
+.header_home.ado{
+    border-bottom-left-radius: 0;
+}
+
 .header_home_ananas {
     position: absolute;
     right: 5%;
@@ -228,6 +232,12 @@ strong {
 
 .header_home_content_name_value {
     font-size: 23px;
+}
+
+.header_home_content img{
+    width: 26px;
+    height: 26px;
+    margin-right:6px;
 }
 
 
@@ -360,6 +370,11 @@ strong {
 .progress_date {
     background-color: white;
     border-bottom-left-radius: 30% 50%;
+}
+
+.progress_date.ado {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 80px 80px;
 }
 
 .progress_origin {
@@ -810,6 +825,10 @@ strong {
 
 .wallet_card img {
     margin-left: 6px;
+}
+
+.wallet_card a{
+    text-decoration: none;
 }
 
 .wallet_card span{
