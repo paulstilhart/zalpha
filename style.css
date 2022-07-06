@@ -47,9 +47,16 @@ strong {
 }
 
 
+.fs_11 {
+    font-size: 11px;
+}
 
 .fs_16 {
     font-size: 16px;
+}
+
+.fs_30 {
+    font-size: 30px;
 }
 
 /*==================== CLASSES UTILITAIRES ====================*/
@@ -91,11 +98,14 @@ strong {
     opacity: 70%;
 }
 
+.background_white {
+    background-color: white;
+}
+
 .circle_white {
     background-color: white;
     border-radius: 100%;
 }
-
 
 .color_white {
     color: white;
@@ -105,15 +115,15 @@ strong {
     background-color: #111125;
 }
 
-.background_white {
-    background-color: white;
+.color_dark{
+    color:#241332;
 }
 
 .background_purple {
     background-color: #5B41B1;
 }
 
-.background_purple_strong{
+.background_purple_strong {
     background-color: #442D90;
 }
 
@@ -135,6 +145,14 @@ strong {
 
 .background_grey {
     background-color: #E5E2EB;
+}
+
+.background_blue {
+    background-color: #007DD0;
+}
+
+.color_blue{
+    color:#007DD0;
 }
 
 
@@ -597,6 +615,7 @@ strong {
 .durability {
     padding: 20px 21px 21px 28px;
 }
+
 .durability.ado {
     padding: 32px 21px 21px 28px;
     border-top-left-radius: 80px 80px;
@@ -608,7 +627,7 @@ strong {
     margin-bottom: 19px;
 }
 
-.durability h2.ado{
+.durability h2.ado {
     margin-left: 21px;
 }
 
@@ -763,21 +782,54 @@ strong {
     color: white;
 }
 
-.wallet_cards_container{
-    padding-left:21px;
-    overflow-x:scroll;
+.wallet_cards_container {
+    padding-left: 21px;
+    overflow-x: scroll;
     display: flex;
-    flex:none;
+    flex: none;
     flex-wrap: none;
-    gap:18px;
+    gap: 18px;
 }
 
 .wallet_card {
-    flex:none;
-    width: 184px;
-    height: 194px;
-    padding: 22px 0px;
+    flex: none;
+    width: 144px;
+    height: 153px;
+    padding: 22px 18px 16px 22px;
     border-radius: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wallet_card div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wallet_card img {
+    margin-left: 6px;
+}
+
+.wallet_card span{
+    text-align: end;
+    color:#27B17C;
+    font-size: 14px;
+}
+
+.wallet_cards_number {
+    padding: 28px 35px 45px 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wallet_cards_number img {
+    height: 25px;
+    width: 25px;
+    margin-left: 12px;
+    cursor: pointer;
 }
 
 
