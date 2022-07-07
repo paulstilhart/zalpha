@@ -1014,6 +1014,7 @@ footer img {
     opacity: 40%;
 }
 
-footer img:hover {
+footer img:hover,
+.footer_active {
     opacity: 100%;
 }
