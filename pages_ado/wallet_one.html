@@ -17,8 +17,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- SCRIPT JS -->
+    <!-- SCRIPT JS CUSTOM -->
     <script type="text/javascript" src="../script.js" defer></script>
+
+    <!-- SCRIPT JS HIGHCHARTS CDN -->
+    <script src="https://code.highcharts.com/highcharts.js" defer></script>
 </head>
 
 <body>
@@ -66,7 +69,7 @@
         </div>
 
         <div class="background_white">
-            <section class="wallet_history flex color_white background_purple ado">
+            <section class="wallet_history flex_column color_white background_purple ado">
                 <p class="wallet_history_date"><strong>historique</strong>
                     <br><span>Janvier - Juin 2021</span>
                 </p>
@@ -74,8 +77,7 @@
                     <p><strong>+1,4%</strong></p>
                     <img src="../sources/icons/arrow_up_green_whitebackground.svg" alt="fleche up verte">
                 </div>
-                <div class="wallet_wait flex_center_center">
-                    PLACEHOLDER GRAPHIQUE
+                <div class="wallet_one_chart" id="chart_container_ado">
                 </div>
             </section>
         </div>

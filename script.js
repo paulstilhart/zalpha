@@ -24,7 +24,7 @@ function activeIcon() {
 activeIcon();
 
 
-//chart
+//chart profil débutant
 document.addEventListener('DOMContentLoaded', function () {
     const chart = Highcharts.chart('chart_container', {
         chart: {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         xAxis: {
-            categories: ['Jan', 'Fev', 'Mars', 'Avril', 'Mai', 'Juin'],
+            categories: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui'],
             color: 'white',
             offset: -30,
             lineWidth: 0,
@@ -66,9 +66,66 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: ''
             },
             gridLineColor: '#111125',
+        },
+        series: [
+            {
+                name: 'Portefeuille',
+                data: [1, 2, 4, 2, 1, 0],
+                color: 'white',
+            }
+        ]
+    });
+});
+
+
+//chart profil ado
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('chart_container_ado', {
+        chart: {
+            type: 'areaspline',
+            backgroundColor: '#5B41B1',
+            marginLeft: 0,
+            marginRight: 0,
+            marginBottom: 0,
+            height: 200,
+        },
+        credits: {
+            enabled: false,
+        },
+        legend: {
+            enabled: false
+        },
+        title: {
+            text: '',
+            floating: true,
+        },
+
+        xAxis: {
+            categories: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui'],
+            color: 'white',
+            offset: -30,
+            lineWidth: 0,
+            labels: {
+                style: {
+                    color: 'white',
+                    fontSize: 14,
+                },
+            },
+
+        },
+        plotOptions: {
+            series: {
+                lineWidth: 0,
+            },
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            gridLineColor: '#5B41B1',
         },
         series: [
             {
