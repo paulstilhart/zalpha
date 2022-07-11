@@ -17,8 +17,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- SCRIPT JS -->
-    <script type="text/javascript" src="./script.js" defer></script>
+    <!-- SCRIPT JS CUSTOM -->
+    <script type="text/javascript" src="../script.js" defer></script>
+
+    <!-- SCRIPT JS HIGHCHARTS CDN -->
+    <script src="https://code.highcharts.com/highcharts.js" defer></script>
 </head>
 
 <body>
@@ -67,8 +70,8 @@
                 <h2>Tendances de marché</h2>
                 <a href="#">SP500<img src="./sources/icons/arrow_forward_wght400.svg" alt="arrow right white"></a>
             </div>
-            <div class="market_graph">
-                placeholder graphique
+
+            <div id="chart_container">
             </div>
         </section>
 
@@ -92,8 +95,9 @@
                 <h2>Curabitur ac consectetur metus, quis sodales magna.</h2>
                 <a href="#"><img src="./sources/icons/arrow_forward_wght400.svg" alt="arrow right"></a>
             </div>
-            <div class="article_photo">
-                placeholder photo
+            <div class="article_photo flex justify_center align_center">
+                <img src="https://geo.img.pmdstatic.net/fit/https.3A.2F.2Fi.2Epmdstatic.2Enet.2Fgeo.2F2021.2F12.2F31.2F461be7a9-f13b-46c5-9afc-0e193063a1ac.2Ejpeg/1150x647/background-color/ffffff/quality/70/les-forets-francaises-face-au-changement-climatique-ce-que-lon-sait-et-comment-on-sadapte.jpg"
+                    alt="photo page accueil profil débutant">
             </div>
             <div class="article_title">
                 <p><em>environnement</em></p>
@@ -111,7 +115,8 @@
 
     <footer>
         <div class="footer_container">
-            <a href="./pages/wallet_all.html"><img id="icon_wallet" src="./sources/icons/footer_wallet.svg" alt="footer wallet"></a>
+            <a href="./pages/wallet_all.html"><img id="icon_wallet" src="./sources/icons/footer_wallet.svg"
+                    alt="footer wallet"></a>
             <a href="./index.html"><img id="icon_home" src="./sources/icons/footer_home.svg" alt="footer maison"></a>
             <a href="#"><img src="./sources/icons/footer_user.svg" alt="footer user"></a>
             <a href="#"><img src="./sources/icons/footer_menu.svg" alt="footer menu"></a>

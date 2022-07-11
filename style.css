@@ -189,6 +189,7 @@ strong {
     position: absolute;
     right: 5%;
     bottom: -5%;
+    height: 85%;
 
 }
 
@@ -547,12 +548,12 @@ strong {
     margin: 20.5px 24px 17.5px 24px;
     height: 104px;
     border-radius: 10px 40px 10px 40px;
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
+    overflow: hidden;
+}
+
+.article_photo img{
+    width: 100%;
+    object-fit: contain;
 }
 
 .article_title {
@@ -698,14 +699,7 @@ strong {
     width: 60px;
 }
 
-.durability_cards_container_number circle{
-    fill:none;
-    stroke-width: 5;
-    stroke: #27B17C;
-    stroke-dasharray: 440;
-    stroke-dashoffset: calc(440 - (440*87)/100);
-    stroke-linecap: round;
-}
+
 
 .durability_cards_container_number div{
     position: absolute;
@@ -723,6 +717,25 @@ strong {
 .durability_cards_container_number span{
     font-size: 11px;
 }
+
+.durability_cards_container_number.investment circle{
+    fill:none;
+    stroke-width: 5;
+    stroke: #27B17C;
+    stroke-linecap: round;
+    stroke-dasharray: 173;
+    stroke-dashoffset: calc(173 - (173 * 71) / 100);
+}
+
+.durability_cards_container_number.footprint circle{
+    fill:none;
+    stroke-width: 5;
+    stroke: #CB4C60;
+    stroke-linecap: round;
+    stroke-dasharray: 173;
+    stroke-dashoffset: calc(173 - (173 * 80) / 100);
+}
+
 
 
 
@@ -1043,7 +1056,7 @@ strong {
 }
 
 
-#chart_container{
+.wallet_one{
     width: 100%;
     margin-top:-100px;
 }
