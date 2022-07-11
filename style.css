@@ -64,6 +64,24 @@ strong {
     display: flex;
 }
 
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.justify_between {
+    justify-content: space-between;
+}
+
+.align_center {
+    align-items: center;
+}
+
+
 .flex_center {
     display: flex;
     justify-content: center;
@@ -115,8 +133,8 @@ strong {
     background-color: #111125;
 }
 
-.color_dark{
-    color:#241332;
+.color_dark {
+    color: #241332;
 }
 
 .background_purple {
@@ -151,8 +169,8 @@ strong {
     background-color: #007DD0;
 }
 
-.color_blue{
-    color:#007DD0;
+.color_blue {
+    color: #007DD0;
 }
 
 
@@ -163,7 +181,7 @@ strong {
     position: relative;
 }
 
-.header_home.ado{
+.header_home.ado {
     border-bottom-left-radius: 0;
 }
 
@@ -234,10 +252,10 @@ strong {
     font-size: 23px;
 }
 
-.header_home_content img{
+.header_home_content img {
     width: 26px;
     height: 26px;
-    margin-right:6px;
+    margin-right: 6px;
 }
 
 
@@ -611,7 +629,7 @@ strong {
 .risk_progress span {
     display: inline-block;
     height: 100%;
-    width: 30%;
+    width: 50%;
     border-radius: 30px;
 }
 
@@ -669,6 +687,44 @@ strong {
 .durability_cards_container.ado {
     background-color: #2D1F5A;
 }
+
+.durability_cards_container_number {
+    position: relative;
+}
+
+.durability_cards_container_number,
+.durability_cards_container_number svg{
+    height: 60px;
+    width: 60px;
+}
+
+.durability_cards_container_number circle{
+    fill:none;
+    stroke-width: 5;
+    stroke: #27B17C;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440*87)/100);
+    stroke-linecap: round;
+}
+
+.durability_cards_container_number div{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.durability_cards_container_number h4{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.durability_cards_container_number span{
+    font-size: 11px;
+}
+
+
 
 .durability_cards_container img {
     position: absolute;
@@ -827,13 +883,13 @@ strong {
     margin-left: 6px;
 }
 
-.wallet_card a{
+.wallet_card a {
     text-decoration: none;
 }
 
-.wallet_card span{
+.wallet_card span {
     text-align: end;
-    color:#27B17C;
+    color: #27B17C;
     font-size: 14px;
 }
 
@@ -958,9 +1014,14 @@ strong {
 }
 
 .wallet_history {
-    flex-direction: column;
-    padding: 35px 0px 0px 50px;
+    padding-top: 35px;
     gap: 12px;
+}
+
+.wallet_history_date,
+.wallet_history_number{
+    padding-left:50px;
+    z-index: 2;
 }
 
 .wallet_history.ado {
@@ -981,10 +1042,12 @@ strong {
     height: 33.5px;
 }
 
-.wallet_wait {
-    padding: 30px;
-    font-size: 30px;
+
+#chart_container{
+    width: 100%;
+    margin-top:-100px;
 }
+
 
 /*==================== FOOTER ====================*/
 footer {
