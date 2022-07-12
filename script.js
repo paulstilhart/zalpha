@@ -23,17 +23,17 @@ function activeIcon() {
 
 activeIcon();
 
-
-//chart profil débutant
+//chart profil ado accueil
 document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('chart_container', {
+    const chart = Highcharts.chart('home_chart', {
         chart: {
             type: 'areaspline',
             backgroundColor: '#111125',
-            marginLeft: 0,
-            marginRight: 0,
-            marginBottom: 0,
+            marginTop:0,
+            marginBottom:0,
             height: 200,
+            spacingLeft: -80,
+            spacingRight:-50,
         },
         credits: {
             enabled: false,
@@ -47,13 +47,13 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         xAxis: {
-            categories: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui'],
+            categories: ['Dec','Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui','Jui'],
             color: 'white',
             offset: -30,
             lineWidth: 0,
             labels: {
                 style: {
-                    color: 'white',
+                    color: '#ffffff91',
                     fontSize: 14,
                 },
             },
@@ -72,9 +72,66 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         series: [
             {
-                name: 'Portefeuille',
-                data: [1, 2, 4, 2, 1, 0],
-                color: 'white',
+                name: 'Accueil ado',
+                data: [1,2, 3, 8, 2, 3, 2,2],
+                color: '#ffffff29',
+            }
+        ]
+    });
+});
+//chart profil débutant wallet one
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('wallet_one_chart', {
+        chart: {
+            type: 'areaspline',
+            backgroundColor: '#111125',
+            marginTop:0,
+            marginBottom:0,
+            height: 200,
+            spacingLeft: -80,
+            spacingRight:-50,
+        },
+        credits: {
+            enabled: false,
+        },
+        legend: {
+            enabled: false
+        },
+        title: {
+            text: '',
+            floating: true,
+        },
+
+        xAxis: {
+            categories: ['Dec','Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui','Jui'],
+            color: 'white',
+            offset: -30,
+            lineWidth: 0,
+            labels: {
+                style: {
+                    color: '#ffffff91',
+                    fontSize: 14,
+                },
+            },
+
+        },
+        plotOptions: {
+            series: {
+                lineWidth: 0,
+            },
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            lineWidth: 0,
+            gridLineColor: '#111125',
+        },
+        series: [
+            {
+                name: 'WalletOne débutant',
+                data: [1,2, 3, 8, 2, 3, 2,2],
+                color: '#ffffff29',
             }
         ]
     });
@@ -129,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         series: [
             {
-                name: 'Portefeuille',
+                name: 'Accueil ado',
                 data: [1,2, 3, 8, 2, 3, 2,2],
                 color: '#ffffff29',
             }
@@ -186,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         series: [
             {
-                name: 'Portefeuille',
+                name: 'WalletOne ado',
                 data: [1,2, 3, 8, 2, 3, 2,2],
                 color: '#ffffff29',
             }

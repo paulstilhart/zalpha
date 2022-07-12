@@ -183,12 +183,14 @@ strong {
 
 /*==================== CHART JS HIGHCHARTS ====================*/
 
+.home_chart_container,
 .home_ado_chart_container {
     width: 100%;
     margin-top: -100px;
     overflow: hidden;
 }
 
+.wallet_one_chart_container,
 .wallet_one_ado_chart_container {
     width: 100%;
     margin-top: -50px;
