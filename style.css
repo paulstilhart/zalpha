@@ -1,17 +1,3 @@
-/* 
-Questions pour Kévin
-
-Variables CSS pour les jauges?
-Comment gérer la hauteur des éléments images png et svg etc?
-
-revoir le positionnement
-
-*/
-
-
-
-
-
 /*==================== RESET CSS ====================*/
 
 *,
@@ -160,11 +146,11 @@ strong {
 }
 
 .background_purple {
-    background-color: #5B41B1;
+    background-color: rgb(91, 65, 177);
 }
 
 .background_purple_strong {
-    background-color: #442D90;
+    background-color: #442d8fb3
 }
 
 .background_green {
@@ -196,9 +182,17 @@ strong {
 }
 
 /*==================== CHART JS HIGHCHARTS ====================*/
-.wallet_one_chart {
+
+.home_ado_chart_container {
+    width: 100%;
+    margin-top: -100px;
+    overflow: hidden;
+}
+
+.wallet_one_ado_chart_container {
     width: 100%;
     margin-top: -50px;
+    overflow: hidden;
 }
 
 /*==================== JAUGE CIRCULAIRES PROGRESSION ====================*/
@@ -499,14 +493,20 @@ strong {
     margin-left: 8px;
 }
 
-.market_graph {
-    height: 150px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
+.market_evolution{
+    padding-left:36px;
+    z-index: 2;
 }
+
+.market_evolution h3{
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.market_evolution span{
+    font-size: 30px;
+    gap: 10px;
+}
+
 
 .profil {
     padding: 50px 24px 37px 24px;
@@ -520,6 +520,7 @@ strong {
 
 .profil_state,
 .profil_footprint {
+    box-sizing: border-box;
     width: 50%;
     height: 139px;
     background-color: #EFEFEF;
@@ -544,32 +545,32 @@ strong {
     align-items: flex-end;
 }
 
-.profil_state img {
+.profil_state img,
+.profil_footprint img,
+.profil_state.ado img,
+.profil_footprint.ado img {
     position: absolute;
+    z-index: 0;
+}
+
+.profil_state img {
     bottom: 0;
     right: 5%;
-    height: 125%;
 }
 
 .profil_footprint img {
-    position: absolute;
     bottom: -5%;
     right: -5%;
-    height: 85%;
-}
-
-.profil_footprint.ado img {
-    position: absolute;
-    bottom: -5%;
-    right: -15%;
-    height: 100%;
 }
 
 .profil_state.ado img {
-    position: absolute;
     bottom: 5%;
     right: -5%;
-    height: 100%;
+}
+
+.profil_footprint.ado img {
+    bottom: -5%;
+    right: -15%;
 }
 
 
@@ -734,7 +735,6 @@ strong {
 }
 
 .durability_cards {
-    display: flex;
     gap: 4%;
 }
 
@@ -745,6 +745,7 @@ strong {
 
 
 .durability_cards_container {
+    box-sizing: border-box;
     width: 48%;
     height: 139px;
     padding: 15px;
@@ -800,17 +801,15 @@ strong {
 
 .durability_cards_container img {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
 }
 
 .durability_cards_image_investment {
-    height: 100%;
     bottom: -10px;
-    right: -30px;
+    right: -25px;
 }
 
 .durability_cards_image_footprint {
-    height: 30%;
     bottom: -5px;
     right: 5px;
 }
@@ -1038,7 +1037,7 @@ strong {
 }
 
 .market_trends_cards_container.ado {
-    background-color: rgba(255, 255, 255, 0.16);
+    background-color: #ffffff29;
 }
 
 .market_trends_cards_container p {
@@ -1052,7 +1051,7 @@ strong {
 }
 
 .market_trends_cards_container img {
-    height: 100px;
+    max-width: 100%;
 }
 
 /*==================== MAIN WALLET ONE ====================*/

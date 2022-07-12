@@ -80,17 +80,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-//chart profil ado
+//chart profil ado accueil
 document.addEventListener('DOMContentLoaded', function () {
-    const chart = Highcharts.chart('chart_container_ado', {
+    const chart = Highcharts.chart('home_ado_chart', {
         chart: {
             type: 'areaspline',
             backgroundColor: '#5B41B1',
-            marginLeft: 0,
-            marginRight: 0,
-            marginBottom: 0,
+            marginTop:0,
+            marginBottom:0,
             height: 200,
+            spacingLeft: -80,
+            spacingRight:-50,
         },
         credits: {
             enabled: false,
@@ -104,13 +104,13 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         xAxis: {
-            categories: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui'],
+            categories: ['Dec','Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui','Jui'],
             color: 'white',
             offset: -30,
             lineWidth: 0,
             labels: {
                 style: {
-                    color: 'white',
+                    color: '#ffffff91',
                     fontSize: 14,
                 },
             },
@@ -130,8 +130,65 @@ document.addEventListener('DOMContentLoaded', function () {
         series: [
             {
                 name: 'Portefeuille',
-                data: [1, 2, 4, 2, 1, 0],
-                color: 'white',
+                data: [1,2, 3, 8, 2, 3, 2,2],
+                color: '#ffffff29',
+            }
+        ]
+    });
+});
+
+//chart profil ado wallet one
+document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('wallet_one_ado_chart', {
+        chart: {
+            type: 'areaspline',
+            backgroundColor: '#5B41B1',
+            marginTop:0,
+            marginBottom:0,
+            height: 200,
+            spacingLeft: -80,
+            spacingRight:-50,
+        },
+        credits: {
+            enabled: false,
+        },
+        legend: {
+            enabled: false
+        },
+        title: {
+            text: '',
+            floating: true,
+        },
+
+        xAxis: {
+            categories: ['Dec','Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui','Jui'],
+            color: 'white',
+            offset: -30,
+            lineWidth: 0,
+            labels: {
+                style: {
+                    color: '#ffffff91',
+                    fontSize: 14,
+                },
+            },
+
+        },
+        plotOptions: {
+            series: {
+                lineWidth: 0,
+            },
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            gridLineColor: '#5B41B1',
+        },
+        series: [
+            {
+                name: 'Portefeuille',
+                data: [1,2, 3, 8, 2, 3, 2,2],
+                color: '#ffffff29',
             }
         ]
     });
