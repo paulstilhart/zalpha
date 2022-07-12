@@ -62,6 +62,10 @@ document.addEventListener('DOMContentLoaded', function () {
         plotOptions: {
             series: {
                 lineWidth: 0,
+                marker: {
+                    enabled:false,
+                    fillColor: '#FFFFFF',
+                },
             },
         },
         yAxis: {
@@ -118,6 +122,10 @@ document.addEventListener('DOMContentLoaded', function () {
         plotOptions: {
             series: {
                 lineWidth: 0,
+                marker: {
+                    enabled:false,
+                    fillColor: '#FFFFFF',
+                },
             },
         },
         yAxis: {
@@ -176,6 +184,10 @@ document.addEventListener('DOMContentLoaded', function () {
         plotOptions: {
             series: {
                 lineWidth: 0,
+                marker: {
+                    enabled:false,
+                    fillColor: '#FFFFFF',
+                },
             },
         },
         yAxis: {
@@ -233,6 +245,10 @@ document.addEventListener('DOMContentLoaded', function () {
         plotOptions: {
             series: {
                 lineWidth: 0,
+                marker: {
+                    enabled:false,
+                    fillColor: '#FFFFFF',
+                },
             },
         },
         yAxis: {
