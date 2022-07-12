@@ -4,6 +4,8 @@ Questions pour Kévin
 Variables CSS pour les jauges?
 Comment gérer la hauteur des éléments images png et svg etc?
 
+revoir le positionnement
+
 */
 
 
@@ -202,7 +204,7 @@ strong {
 /*==================== JAUGE CIRCULAIRES PROGRESSION ====================*/
 .durability_cards_container_number.wallet_investment circle {
     stroke: #27B17C;
-    stroke-dashoffset: calc(198 - (198 * 71) / 100);
+    stroke-dashoffset: calc(198 - (198 * 50) / 100);
 }
 
 .durability_cards_container_number.wallet_footprint circle {
