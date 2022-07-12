@@ -1,3 +1,15 @@
+/* 
+Questions pour Kévin
+
+Variables CSS pour les jauges?
+Comment gérer la hauteur des éléments images png et svg etc?
+
+*/
+
+
+
+
+
 /*==================== RESET CSS ====================*/
 
 *,
@@ -10,9 +22,10 @@
 }
 
 
-
-
 /*==================== REM ET VARIABLES ====================*/
+html {
+    --wallet_investment: 71;
+}
 
 body {
     font-size: 16px;
@@ -107,6 +120,10 @@ strong {
     align-items: center;
 }
 
+.overflow_hidden {
+    overflow: hidden;
+}
+
 
 /*==================== TYPE DE POLICE ====================*/
 * {
@@ -198,10 +215,16 @@ strong {
     stroke-dashoffset: calc(198 - (198 * 80) / 100);
 }
 
+.durability_cards_container_number.home_ado circle {
+    stroke: #27B17C;
+    stroke-dashoffset: calc(198 - (198 * 80) / 100);
+}
+
 .durability_cards_container_number.wallet_ado_footprint circle {
     stroke: #CB4C60;
     stroke-dashoffset: calc(198 - (198 * 70) / 100);
 }
+
 .durability_cards_container_number.wallet_ado_investment circle {
     stroke: #27B17C;
     stroke-dashoffset: calc(198 - (198 * 91) / 100);
@@ -448,12 +471,6 @@ strong {
 }
 
 
-
-.market {
-    background-color: rgba(17, 17, 37, 1);
-    color: white;
-}
-
 .market_title {
     display: flex;
     justify-content: space-between;
@@ -490,13 +507,13 @@ strong {
 }
 
 .profil {
-    background-color: rgba(17, 17, 37, 1);
     padding: 50px 24px 37px 24px;
     gap: 4%;
+    border-top-left-radius: 80px 80px;
 }
 
 .profil p {
-    z-index: 1;
+    z-index: 2;
 }
 
 .profil_state,
@@ -510,6 +527,11 @@ strong {
     font-weight: 500;
     text-transform: capitalize;
     position: relative;
+}
+
+.profil_state.ado,
+.profil_footprint.ado {
+    background-color: #2D1F5A;
 }
 
 .profil strong {
@@ -532,6 +554,20 @@ strong {
     bottom: -5%;
     right: -5%;
     height: 85%;
+}
+
+.profil_footprint.ado img {
+    position: absolute;
+    bottom: -5%;
+    right: -15%;
+    height: 100%;
+}
+
+.profil_state.ado img {
+    position: absolute;
+    bottom: 5%;
+    right: -5%;
+    height: 100%;
 }
 
 
@@ -747,11 +783,12 @@ strong {
     font-size: 11px;
 }
 
+.durability_cards_container_number.home circle,
 .durability_cards_container_number.wallet_investment circle,
 .durability_cards_container_number.wallet_footprint circle,
-.durability_cards_container_number.home circle,
-.durability_cards_container_number.wallet_ado_footprint circle,
-.durability_cards_container_number.wallet_ado_investment circle {
+.durability_cards_container_number.home_ado circle,
+.durability_cards_container_number.wallet_ado_investment circle,
+.durability_cards_container_number.wallet_ado_footprint circle {
     fill: none;
     stroke-width: 7;
     stroke-linecap: round;

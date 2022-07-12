@@ -72,36 +72,49 @@
             </section>
         </div>
 
-        <section class="profil">
-            <div class="profil_state">
-                <p>Profil
-                    <br><strong>Equilibré</strong>
-                </p>
-                <img src="./sources/images/profil_1.svg" alt="profil etat">
-            </div>
-            <div class="profil_footprint">
-                <p>Investissement
-                    <br><strong>Durable</strong>
-                    <img src="./sources/images/emprunte_carbone_2.svg" alt="emprunte carbone">
-                </p>
-            </div>
-        </section>
+        <div class="background_white">
+            <section class="profil color_white background_purple flex overflow_hidden">
+                <div class="flex profil_state ado">
+                    <p>Profil
+                        <br><strong>Equilibré</strong>
+                    </p>
+                    <img src="./sources/images/profil_ado_1.svg" alt="profil etat">
+                </div>
+                <div class="flex_column justify_between profil_footprint ado">
+                    <p>Investissement
+                        <br><strong>Durable</strong>
+                        <img src="./sources/images/investissement_durable_1.svg" alt="emprunte carbone">
+                    </p>
+                    <div class="home_ado durability_cards_container_number flex_column justify_center align_center">
+                        <svg>
+                            <circle cx="35" cy="35" r="31.5"></circle>
+                        </svg>
+                        <div class="flex justify_center align_center">
+                            <h4>71<span>%</span></h4>
+                        </div>
+                    </div>
+                </div>
 
-        <section class="market">
-            <div class="market_title">
-                <h2>Tendances de marché</h2>
-                <a href="#">SP500<img src="./sources/icons/arrow_forward_wght400.svg" alt="arrow right white"></a>
-            </div>
-            <div class="market_graph">
-                placeholder graphique
-            </div>
-        </section>
+            </section>
+
+            <section class="color_white background_purple market">
+                <div class="market_title">
+                    <h2>Tendances de marché</h2>
+                    <a href="#">SP500<img src="./sources/icons/arrow_forward_wght400.svg" alt="arrow right white"></a>
+                </div>
+                <div id="chart_container_ado">
+                </div>
+            </section>
+        </div>
+
     </main>
 
     <footer>
         <div class="footer_container">
-            <a href="./pages_ado/wallet_all.html"><img id="icon_wallet" src="./sources/icons/footer_wallet.svg" alt="footer wallet"></a>
-            <a href="./index_ado.html"><img id="icon_home" src="./sources/icons/footer_home.svg" alt="footer maison"></a>
+            <a href="./pages_ado/wallet_all.html"><img id="icon_wallet" src="./sources/icons/footer_wallet.svg"
+                    alt="footer wallet"></a>
+            <a href="./index_ado.html"><img id="icon_home" src="./sources/icons/footer_home.svg"
+                    alt="footer maison"></a>
             <a href="#"><img src="./sources/icons/footer_user.svg" alt="footer user"></a>
             <a href="#"><img src="./sources/icons/footer_menu.svg" alt="footer menu"></a>
         </div>
