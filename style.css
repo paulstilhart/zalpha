@@ -6,14 +6,10 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    z-index: 1;
 }
 
 
 /*==================== REM ET VARIABLES ====================*/
-html {
-    --wallet_investment: 71;
-}
 
 body {
     font-size: 16px;
@@ -110,6 +106,10 @@ strong {
 
 .overflow_hidden {
     overflow: hidden;
+}
+
+.z_index_2{
+    z-index:2;
 }
 
 
@@ -239,12 +239,10 @@ strong {
     border-bottom-left-radius: 0;
 }
 
-.header_home_ananas {
+.header_home_img {
     position: absolute;
     right: 5%;
     bottom: -5%;
-    height: 85%;
-
 }
 
 .header_home_title {
@@ -287,16 +285,14 @@ strong {
     right: -8px;
 }
 
-.header_home_content {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-weight: 700;
-}
 
 .header_home_content_name {
     font-size: 15px;
     margin-bottom: 4px;
+}
+
+.header_home_content_name span{
+    font-size:15px;
 }
 
 .header_home_content_name strong {
@@ -516,9 +512,6 @@ strong {
     border-top-left-radius: 80px 80px;
 }
 
-.profil p {
-    z-index: 2;
-}
 
 .profil_state,
 .profil_footprint {
@@ -552,7 +545,6 @@ strong {
 .profil_state.ado img,
 .profil_footprint.ado img {
     position: absolute;
-    z-index: 0;
 }
 
 .profil_state img {
